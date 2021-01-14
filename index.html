@@ -21,7 +21,9 @@
       function showPosition(position) {
         x.innerHTML = "Latitude: " + position.coords.latitude + 
         "<br>Longitude: " + position.coords.longitude+
-          '<br>Altitude: ' + position.coords.altitude;
+          '<br>Altitude: ' + position.coords.altitude +
+          "<br> Precisão da Posição: " position.coords.accuracy +
+          "<br>Precisão da Altitude: " position.coords.altitudeAccuracy
       }
       </script>
   </body>
